@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Search and identify Pokemon.">
+<title>Pokedex - Trainer Academy</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap" id="main">
+<div class="page-title">
+  <h1>Pokedex</h1>
+  <p>Find any Pokemon by name or number, or narrow it down with filters. Tap a Pokemon to see all about it.</p>
+</div>
+
+<section class="card">
+  <div class="row">
+    <div><label for="q">Name or number</label><input type="search" id="q" placeholder="Try pikachu or 25" autocomplete="off"></div>
+    <div><label for="ftype">Type</label><select id="ftype"><option value="">All types</option></select></div>
+    <div><label for="fgen">Generation</label><select id="fgen"><option value="">All generations</option></select></div>
+    <div><label for="fcolor">Color</label><select id="fcolor"><option value="">All colors</option></select></div>
+    <button class="btn sm" id="clear" type="button">Clear filters</button>
+  </div>
+</section>
+
+<details class="card blue" id="helper">
+  <summary><b style="font-family:Fredoka;font-size:1.4rem">Who is this? Identify a Pokemon</b></summary>
+  <p style="margin-top:10px">Saw a Pokemon but forgot its name? Pick the clues you remember. You can skip any question.</p>
+  <div id="clues"></div>
+  <button class="btn red" id="findBtn" type="button">Show me who it could be</button>
+  <button class="btn sm yellow" id="resetClues" type="button">Start over</button>
+  <div id="helperOut" aria-live="polite"></div>
+</details>
+
+<div id="status" class="muted center" aria-live="polite"></div>
+<div id="grid" class="pk-grid"></div>
+<div class="center" style="margin-top:18px"><button class="btn" id="more" type="button" hidden>Show more Pokemon</button></div>
+
+<div class="modal hidden" id="modal" role="dialog" aria-modal="true" aria-label="Pokemon details">
+  <div class="modal-box"><button class="modal-close" id="closeModal" type="button">Close</button><div id="detail"></div></div>
+</div>
+</main>
+<div id="site-footer"></div>
+<script src="js/common.js"></script>
+<script src="js/pokedex.js"></script>
+</body>
+</html>

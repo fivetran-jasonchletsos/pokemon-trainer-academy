@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Interactive Pokemon type chart.">
+<title>Type Chart - Trainer Academy</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap" id="main">
+<div class="page-title"><h1>Type Chart</h1><p>Every Pokemon move has a type. Some types are strong against others! Tap a type to see how it does.</p></div>
+<section class="card">
+  <div class="center no-print" style="margin-bottom:12px">
+    <button class="chip on" id="modeAtt" type="button">When it attacks</button>
+    <button class="chip" id="modeDef" type="button">When it defends</button>
+  </div>
+  <div class="type-buttons" id="typeBtns"></div>
+  <div id="result" aria-live="polite" style="margin-top:18px">Loading the type chart...</div>
+</section>
+<section class="card">
+  <h2>The whole chart</h2>
+  <p>Rows are the attacking type. Columns are the defending type. A green 2 means super effective, a red 1/2 means not very effective, and a black 0 means no effect. Blank means normal damage. Scroll sideways on a small screen.</p>
+  <div class="matrix-wrap" id="matrix"></div>
+</section>
+<section class="card yellow"><h3>Remember</h3><p>A Pokemon with two types gets both matchups multiplied together. A move that is super effective against one of its types and not very effective against the other ends up as normal damage. Some Pokemon are weak to a type twice and take four times damage!</p></section>
+</main>
+<div id="site-footer"></div>
+<script src="js/common.js"></script>
+<script src="js/types.js"></script>
+</body>
+</html>

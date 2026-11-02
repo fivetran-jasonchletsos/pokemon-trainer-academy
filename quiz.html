@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Pokemon quiz games.">
+<title>Quiz Games - Trainer Academy</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap" id="main">
+<div class="page-title"><h1>Quiz Games</h1><p>Test your Pokemon knowledge. How long can you keep your streak going?</p></div>
+<div class="center no-print" style="margin-bottom:18px">
+  <button class="chip on" id="tabSil" type="button">Who's That Pokemon?</button>
+  <button class="chip" id="tabType" type="button">Type Matchup Quiz</button>
+</div>
+
+<section id="silGame" class="card">
+  <h2 class="center">Who's That Pokemon?</h2>
+  <div class="score-bar"><div><b id="sScore">0</b>Score</div><div><b id="sStreak">0</b>Streak</div><div><b id="sBest">0</b>Best streak</div></div>
+  <div class="row" style="justify-content:center;margin-bottom:12px"><div style="max-width:260px"><label for="sRange">Which Pokemon?</label><select id="sRange"></select></div></div>
+  <div class="sil" id="silBox"></div>
+  <div class="feedback" id="sFeed" aria-live="polite"></div>
+  <div class="opts" id="sOpts"></div>
+  <div class="center"><button class="btn sm yellow" id="sHint" type="button">Give me a hint</button> <button class="btn" id="sNext" type="button" hidden>Next Pokemon</button></div>
+  <p class="center small muted" id="sHintText"></p>
+</section>
+
+<section id="typeGame" class="card hidden">
+  <h2 class="center">Type Matchup Quiz</h2>
+  <div class="score-bar"><div><b id="tScore">0</b>Score</div><div><b id="tStreak">0</b>Streak</div><div><b id="tBest">0</b>Best streak</div></div>
+  <div id="tBody"></div>
+</section>
+</main>
+<div id="site-footer"></div>
+<script src="js/common.js"></script>
+<script src="js/quiz.js"></script>
+</body>
+</html>

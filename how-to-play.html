@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A kid-friendly guide to playing the Pokemon Trading Card Game.">
+<title>How to Play - Trainer Academy</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap" id="main">
+<div class="page-title"><h1>How to Play the Trading Card Game</h1><p>Two trainers, two decks, and lots of fun. Here is everything you need, one step at a time. A grown-up or friend can help you read along.</p>
+<p class="small muted">Rules get small updates over time. For the official word, check the rulebook that comes with your deck.</p></div>
+
+<nav class="card no-print" aria-label="On this page"><b>Jump to:</b>
+  <a href="#goal">The goal</a>, <a href="#setup">Setup</a>, <a href="#turn">Your turn</a>, <a href="#attack">Attacking</a>, <a href="#ko">Knock Outs</a>, <a href="#conditions">Special conditions</a>, <a href="#practice">Practice turn</a>, <a href="#deck">Build a deck</a>, <a href="#words">Words to know</a>
+</nav>
+
+<section class="card yellow" id="goal">
+  <h2>The goal</h2>
+  <p>Each player starts with 6 face-down <b>Prize cards</b>. Every time one of your attacks Knocks Out your opponent's Pokemon, you take a Prize card. <b>Take all 6 and you win!</b></p>
+  <p>You can also win if your opponent has no Pokemon left in play, or if they cannot draw a card at the start of their turn because their deck ran out.</p>
+  <p>A deck has exactly <b>60 cards</b>.</p>
+</section>
+
+<section class="card" id="setup">
+  <h2>Setting up</h2>
+  <ol class="steps">
+    <li><b>Shuffle and draw 7.</b> Each player shuffles their deck and draws 7 cards.</li>
+    <li><b>Find a Basic Pokemon.</b> You need at least one Basic Pokemon in your hand. If you have none, that is called a <b>mulligan</b>. Show your hand, shuffle it back in, and draw 7 again. Your opponent may draw an extra card for it.</li>
+    <li><b>Choose your Active Pokemon.</b> Put one Basic Pokemon face down in the Active spot. This is your fighter.</li>
+    <li><b>Fill your Bench.</b> You may put more Basic Pokemon face down on your Bench. The Bench holds up to 5.</li>
+    <li><b>Set your Prize cards.</b> Put the top 6 cards of your deck face down to the side.</li>
+    <li><b>Flip a coin.</b> The winner decides who goes first. Then both players flip their Pokemon face up and the game begins!</li>
+  </ol>
+  <div class="notice">The player who goes first does not attack on their first turn. Nobody can evolve a Pokemon on their very first turn either. Check your rulebook for any extra first-turn rules.</div>
+</section>
+
+<section class="card blue" id="turn">
+  <h2>What happens on your turn</h2>
+  <ol class="steps">
+    <li><b>Draw a card.</b> Take the top card of your deck. Always do this first.</li>
+    <li><b>Do any of these things, in any order.</b>
+      <ul>
+        <li><b>Bench Basic Pokemon.</b> Put as many as you like from your hand, as long as your Bench has room.</li>
+        <li><b>Evolve your Pokemon.</b> Put a Stage 1 on its matching Basic, or a Stage 2 on its Stage 1. A Pokemon cannot evolve the same turn it was played, and not on a player's first turn.</li>
+        <li><b>Attach one Energy.</b> Once per turn, take an Energy card from your hand and put it on one of your Pokemon.</li>
+        <li><b>Play Trainer cards.</b> Play as many Items as you want, but only one Supporter and one Stadium each turn. Attach Pokemon Tools to your Pokemon.</li>
+        <li><b>Retreat your Active Pokemon.</b> Once per turn, you may swap your Active Pokemon with one on the Bench by discarding Energy equal to its retreat cost.</li>
+        <li><b>Use Abilities.</b> Some Pokemon have special Abilities you can use. Read the card.</li>
+      </ul></li>
+    <li><b>Attack!</b> Pick one attack your Active Pokemon has enough Energy for. Attacking ends your turn. If you do not want to attack, you can say "I pass" and end your turn.</li>
+    <li><b>Pokemon Checkup.</b> Between turns, check for special conditions like Poison and Burn (see below). Then it is your opponent's turn!</li>
+  </ol>
+</section>
+
+<section class="card" id="attack">
+  <h2>Attacking, weakness, and resistance</h2>
+  <p>Your Active Pokemon needs the right Energy attached to pay the cost of an attack. The number on the attack is the damage. Put that many damage on the other Pokemon (a damage counter stands for 10 damage).</p>
+  <ul>
+    <li><b>Weakness.</b> If the defending Pokemon is weak to your attacker's type, the damage is usually doubled. Check the weakness spot at the bottom of the card.</li>
+    <li><b>Resistance.</b> If the defender resists your type, the damage is usually reduced by 30.</li>
+    <li>Weakness and resistance only count for Pokemon in the Active spot.</li>
+  </ul>
+  <p>Example: Sparkmouse uses a 30 damage attack on a Pokemon with 60 HP that is weak to Lightning. 30 doubled is 60, which is enough to Knock it Out!</p>
+</section>
+
+<section class="card red" id="ko">
+  <h2>Knock Outs and Prize cards</h2>
+  <ol class="steps">
+    <li>When a Pokemon has damage equal to or more than its HP, it is <b>Knocked Out</b>.</li>
+    <li>It goes to its owner's discard pile, along with everything attached to it.</li>
+    <li>The player who did it takes <b>1 Prize card</b> and puts it in their hand. Some special Pokemon, like ex and VMAX, give up more Prize cards.</li>
+    <li>The player who lost the Pokemon chooses a new Active from their Bench. If they have none left, they lose the game.</li>
+  </ol>
+</section>
+
+<section class="card" id="conditions">
+  <h2>Special conditions</h2>
+  <p>Some attacks make your Active Pokemon feel strange. These conditions only affect the Active Pokemon. They go away if the Pokemon moves to the Bench or evolves. Conditions are checked during the Pokemon Checkup.</p>
+  <div class="cond" style="border-color:#5b8fee"><b>Asleep.</b> Cannot attack or retreat. At each Pokemon Checkup, flip a coin. Heads, it wakes up.</div>
+  <div class="cond" style="border-color:#ee7f30"><b>Burned.</b> At each Pokemon Checkup, put 2 damage counters (20 damage) on it, then flip a coin. Heads, the burn goes away.</div>
+  <div class="cond" style="border-color:#f85888"><b>Confused.</b> When it tries to attack, flip a coin. Tails, the attack does not happen and it puts 3 damage counters (30 damage) on itself. It can still retreat.</div>
+  <div class="cond" style="border-color:#e0b50f"><b>Paralyzed.</b> Cannot attack or retreat. It recovers at the end of its owner's next turn.</div>
+  <div class="cond" style="border-color:#a040a0"><b>Poisoned.</b> At each Pokemon Checkup, put 1 damage counter (10 damage) on it. It stays poisoned until it is cured, moves to the Bench, or evolves.</div>
+  <p class="small muted">A Pokemon can be Burned and Poisoned at once. Asleep, Confused, and Paralyzed cannot happen together, so the newest one replaces the older one.</p>
+</section>
+
+<section class="card green" id="practice">
+  <h2>Play a practice turn</h2>
+  <p>Step through one full turn. Press the button each time to do the action, and watch the board change.</p>
+  <div class="grid g2">
+    <div class="board" id="board" aria-live="polite"></div>
+    <div><div class="tut-text" id="tutText"></div><p class="small muted" id="tutProg"></p><button class="btn red" id="tutBtn" type="button"></button> <button class="btn sm yellow" id="tutReset" type="button">Start over</button></div>
+  </div>
+</section>
+
+<section class="card yellow" id="deck">
+  <h2>Build your first deck</h2>
+  <p>Your deck must have exactly <b>60 cards</b>. You can have at most <b>4 copies</b> of any card with the same name, except basic Energy cards, which you can have as many of as you like. Your deck also needs at least one Basic Pokemon.</p>
+  <p>A friendly starting shape for beginners is about:</p>
+  <div class="row no-print">
+    <div><label for="dPoke">Pokemon (about 20)</label><input type="number" id="dPoke" class="num-in" min="0" max="60" value="20"></div>
+    <div><label for="dTrain">Trainers (about 25)</label><input type="number" id="dTrain" class="num-in" min="0" max="60" value="25"></div>
+    <div><label for="dEn">Energy (about 15)</label><input type="number" id="dEn" class="num-in" min="0" max="60" value="15"></div>
+  </div>
+  <div class="deck-bars" aria-hidden="true"><div id="bPoke" style="background:#ee3b3b"></div><div id="bTrain" style="background:#3b9ae1"></div><div id="bEn" style="background:#ffcb05"></div></div>
+  <p id="deckMsg" aria-live="polite"><b></b></p>
+  <h3>Deck tips</h3>
+  <ul>
+    <li>Pick one or two favorite types and use Energy that matches. Fewer types means fewer problems.</li>
+    <li>Include several Basic Pokemon so you can start every game.</li>
+    <li>Trainer cards help you draw cards and find what you need. Beginners often use a lot of them.</li>
+    <li>Ready-made starter decks and theme decks are a great way to learn. Ask a grown-up about them.</li>
+    <li>Play lots of games and change a few cards each time. That is how you learn what works!</li>
+  </ul>
+</section>
+
+<section class="card" id="words">
+  <h2>Words to know</h2>
+  <p>Active, Bench, Prize cards, discard pile, Knock Out, evolve, Energy, retreat, Supporter, Stadium, and mulligan are all explained in our <a href="glossary.html">glossary</a>.</p>
+</section>
+</main>
+<div id="site-footer"></div>
+<script src="js/common.js"></script>
+<script src="js/play.js"></script>
+</body>
+</html>

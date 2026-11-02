@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Build a dream team of six Pokemon.">
+<title>Dream Team - Trainer Academy</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap" id="main">
+<div class="page-title"><h1>Build Your Dream Team</h1><p>Pick up to 6 Pokemon. Your team is saved on this device, so it will be here next time you visit.</p></div>
+<section class="card"><h2>Your team</h2><div class="slots" id="slots"></div><p style="margin-top:12px"><button class="btn sm yellow" id="clearTeam" type="button">Clear team</button></p></section>
+<section class="card blue"><h2>Add a Pokemon</h2>
+  <label for="tq">Search by name or number</label><input type="search" id="tq" placeholder="Try bulbasaur" autocomplete="off" style="width:100%">
+  <div id="tres" class="pk-grid list-box" style="margin-top:12px"></div>
+</section>
+<section class="card yellow"><h2>Team type coverage</h2><div id="cov" aria-live="polite"><p>Add a Pokemon to see how your team does.</p></div></section>
+</main>
+<div id="site-footer"></div>
+<script src="js/common.js"></script>
+<script src="js/team.js"></script>
+</body>
+</html>

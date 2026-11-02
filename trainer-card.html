@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Make a printable trainer ID card.">
+<title>Trainer ID - Trainer Academy</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap" id="main">
+<div class="page-title no-print"><h1>Trainer ID Card Maker</h1><p>Fill in your details, then print your very own card. Do not put your last name, address, or phone number on it. A trainer name or nickname is perfect!</p></div>
+<section class="card no-print">
+  <div class="row">
+    <div><label for="iName">Trainer name</label><input type="text" id="iName" maxlength="20" placeholder="Your trainer name"></div>
+    <div><label for="iPoke">Favorite Pokemon</label><input type="text" id="iPoke" list="pokeList" placeholder="Start typing a name" autocomplete="off"><datalist id="pokeList"></datalist></div>
+    <div><label for="iType">Favorite type</label><select id="iType"></select></div>
+    <div><label for="iRegion">Favorite region</label><select id="iRegion"></select></div>
+  </div>
+  <p class="small muted" id="iNote"></p>
+  <button class="btn red" id="printBtn" type="button">Print my card</button>
+</section>
+<div class="print-area">
+  <div class="idcard" id="idcard">
+    <div class="hd"><span>POKEMON TRAINER</span><span id="cId">ID 0000</span></div>
+    <div class="body">
+      <div>
+        <div class="big" id="cName">Trainer</div>
+        <div class="f"><b>Favorite Pokemon:</b> <span id="cPoke">Pikachu</span></div>
+        <div class="f"><b>Favorite type:</b> <span id="cType">Electric</span></div>
+        <div class="f"><b>Favorite region:</b> <span id="cRegion">Kanto</span></div>
+        <div class="f"><b>Rank:</b> Academy Trainer</div>
+      </div>
+      <div class="pic"><img id="cImg" alt="Favorite Pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"></div>
+    </div>
+    <div class="ft"><span>Trainer Academy</span><span>Gotta learn them all</span></div>
+  </div>
+</div>
+</main>
+<div id="site-footer"></div>
+<script src="js/common.js"></script>
+<script src="js/idcard.js"></script>
+</body>
+</html>
